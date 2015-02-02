@@ -200,6 +200,9 @@ QUATERNION_W_HIGH | R | 0x43 | DATA | Quaternion
 
 * I_ACC_X_LOW ~ I_MAGNET_Z_HIGH
  * These registers store the sensor output value that is not compensated by the calibration parameter. Lower 8bit is saved in a LOW register and higher 8bit register is saved in a HIGH register. Since the value is originally Integer, there is no need to convert it into a Real number.
+* C_ACC_X_LOW ~ C_ACC_Z_HIGH
+ * These registers store the acceleration output value (signed 16bit) that is compensated by the calibration parameter. Lower 8bit is saved in a LOW register and higher 8bit register is saved in a HIGH register. Multiplying a scale factor (16 / 32767) converts the unit of acceleration value into the (g) unit.
+ * Acceleration(g) = C_ACC × 16 / 32767
 
 
 
