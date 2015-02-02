@@ -119,6 +119,16 @@ This video shows the calibration procedure of myAHRS+ using myAHRS+ Monitor.
 
 # I2C Interface 
 
+The myAHRS+ operates as I2C slave and the I2C bus requires the pull-up register. Normally 4.7kΩ register is used but 1kΩ ~ 10kΩ register can be used depends on the situation.
+
+![ScreenShot](images/wiki_image_5_I2C_circuit.JPG)
+
+The I2C port operates in 3.3V voltage level and can be used directly with a MCU with 5V IO without an extra circuit.
+I2C Slave address: 7bit, 0x20
+Data bit: 8bit
+I2C clock speed: Normal mode(100KHz), Fast mode(400KHz)
+I2C interface of the myAHRS+ supports four sequences shown below.
+
 # UART Protocol 
 
 # Examples
