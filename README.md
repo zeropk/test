@@ -187,8 +187,19 @@ PITCH_LOW | R | 0x38 | DATA | Euler angle
 PITCH_HIGH | R | 0x39 | DATA | Euler angle
 YAW_LOW | R | 0x3A | DATA | Euler angle
 YAW_HIGH | R | 0x3B | DATA | Euler angle
+QUATERNION_X_LOW | R | 0x3C | DATA | Quaternion
+QUATERNION_X_HIGH | R | 0x3D | DATA | Quaternion
+QUATERNION_Y_LOW | R | 0x3E | DATA | Quaternion
+QUATERNION_Y_HIGH | R | 0x3F | DATA | Quaternion
+QUATERNION_Z_LOW | R | 0x40 | DATA | Quaternion
+QUATERNION_Z_HIGH | R | 0x41 | DATA | Quaternion
+QUATERNION_W_LOW | R | 0x42 | DATA | Quaternion
+QUATERNION_W_HIGH | R | 0x43 | DATA | Quaternion
 
+###3. Data transform formula
 
+* I_ACC_X_LOW ~ I_MAGNET_Z_HIGH
+ *These registers store the sensor output value that is not compensated by the calibration parameter. Lower 8bit is saved in a LOW register and higher 8bit register is saved in a HIGH register. Since the value is originally Integer, there is no need to convert it into a Real number.
 
 
 
