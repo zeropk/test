@@ -198,7 +198,7 @@ QUATERNION_W_HIGH | R | 0x43 | DATA | Quaternion
 
 ###3. Data transform formula
 
-* I_ACC_X_LOW ~ I_MAGNET_Z_HIGH.
+* I_ACC_X_LOW ~ I_MAGNET_Z_HIGH
  * These registers store the sensor output value that is not compensated by the calibration parameter. Lower 8bit is saved in a LOW register and higher 8bit register is saved in a HIGH register. Since the value is originally Integer, there is no need to convert it into a Real number.
 
 
