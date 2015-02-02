@@ -135,7 +135,7 @@ I2C interface of the myAHRS+ supports four sequences shown below.
 
 ![ScreenShot](images/wiki_image_5_I2C_sequence.JPG)
 
-2. I2C Register description
+I2C Register description
 
 Register Name | Attributes | Address | Dafault value | Description
 ------|------|------|------------- | ----------
@@ -173,17 +173,20 @@ C_GYRO_Y_LOW | R | 0x2A | DATA | Calibrated gyroscope data
 C_GYRO_Y_HIGH | R | 0x2B | DATA | Calibrated gyroscope data
 C_GYRO_Z_LOW | R | 0x2C | DATA | Calibrated gyroscope data
 C_GYRO_Z_HIGH | R | 0x2D | DATA | Calibrated gyroscope data
-
-
-
-
-
-
-
-
-
-
-
+C_MAGNET_X_LOW | R | 0x2E | DATA | Calibrated magnetometer data
+C_MAGNET_X_HIGH | R | 0x2F | DATA | Calibrated magnetometer data
+C_MAGNET_Y_LOW | R | 0x30 | DATA | Calibrated magnetometer data
+C_MAGNET_Y_HIGH | R | 0x31 | DATA | Calibrated magnetometer data
+C_MAGNET_Z_LOW | R | 0x32 | DATA | Calibrated magnetometer data
+C_MAGNET_Z_HIGH | R | 0x33 | DATA | Calibrated magnetometer data
+TEMPERATURE_LOW | R | 0x34 | DATA | Temperature data
+TEMPERATURE_HIGH | R | 0x35 | DATA | Temperature data
+ROLL_LOW | R | 0x36 | DATA | Euler angle
+ROLL_HIGH | R | 0x37 | DATA | Euler angle
+PITCH_LOW | R | 0x38 | DATA | Euler angle
+PITCH_HIGH | R | 0x39 | DATA | Euler angle
+YAW_LOW | R | 0x3A | DATA | Euler angle
+YAW_HIGH | R | 0x3B | DATA | Euler angle
 
 
 
