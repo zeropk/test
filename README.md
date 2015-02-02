@@ -129,7 +129,8 @@ Normally 4.7kΩ register is used but 1kΩ ~ 10kΩ register can be used depends o
 The I2C port operates in 3.3V voltage level and can be used directly with a MCU with 5V IO without an extra circuit.<br/>
 * I2C Slave address: 7bit, 0x20
 * Data bit: 8bit
-* I2C clock speed: Normal mode(100KHz), Fast mode(400KHz)<br/>
+* I2C clock speed: Normal mode(100KHz), Fast mode(400KHz)
+
 I2C interface of the myAHRS+ supports four sequences shown below.
 
 ![ScreenShot](images/wiki_image_5_I2C_sequence.JPG)
