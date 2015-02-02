@@ -200,13 +200,31 @@ QUATERNION_W_HIGH | R | 0x43 | DATA | Quaternion
 
 * I_ACC_X_LOW ~ I_MAGNET_Z_HIGH
  * These registers store the sensor output value that is not compensated by the calibration parameter. Lower 8bit is saved in a LOW register and higher 8bit register is saved in a HIGH register. Since the value is originally Integer, there is no need to convert it into a Real number.
+
 * C_ACC_X_LOW ~ C_ACC_Z_HIGH
  * These registers store the acceleration output value (signed 16bit) that is compensated by the calibration parameter. Lower 8bit is saved in a LOW register and higher 8bit register is saved in a HIGH register. Multiplying a scale factor (16 / 32767) converts the unit of acceleration value into the (g) unit.
  * Acceleration(g) = C_ACC × 16 / 32767
 
+* C_GYRO_X_LOW ~ C_ GYRO _Z_HIGH
+ * These registers store the gyroscope output value (signed 16bit) that is compensated by the calibration parameter. Lower 8bit is saved in a LOW register and higher 8bit register is saved in a HIGH register. Multiplying a scale factor (2000 / 32767) converts the unit of gyroscope value into the (dps / degree per second) unit.
+ * Gyroscope(dps) = C_GYRO × 2000 / 32767
 
+* C_MAGNET_X_LOW ~ C_ MAGNET _Z_HIGH
+ * These registers store the magnetometer output value (signed 16bit) that is compensated by the calibration parameter. Lower 8bit is saved in a LOW register and higher 8bit register is saved in a HIGH register. The output value of a calibrated magnetometer sensor is not required to convert into a Real number, because there is no physical unit.
+ * If you need magnetic field measurement, multiply the scale factor 0.3 to not-calibrated magnetometer output (I_MAGNET_X_LOW ~ I_MAGNET_Z_HIGH) then you can get the magnetic field measurement in uT.
+ * Magnetometer(uT) = I_MAGNET × 0.3
 
+* TEMPERATURE_LOW ~ TEMPERATURE_HIGH
+ * These registers store the temperature output value (signed 16bit). Lower 8bit is saved in a LOW register and higher 8bit register is saved in a HIGH register. Multiplying a scale factor (200 / 32767) converts the unit of the temperature value into the (℃) unit.
+ * Temperature(℃) = TEMPERATURE_N × 200 / 32767
 
+* ROLL_LOW ~ YAW_HIGH
+ * These registers store the Euler angle output value (signed 16bit). Lower 8bit is saved in a LOW register and higher 8bit register is saved in a HIGH register. Multiplying a scale factor (180 / 32767) converts the unit of the angle value into the (°) unit.
+ * Euler angle(°) = ROLL(PITCH, YAW) × 180 / 32767
+
+* QUATERNION_X_LOW ~ QUATERNION_W_HIGH
+ * These registers store the quaternion output value (signed 16bit). Lower 8bit is saved in a LOW register and higher 8bit register is saved in a HIGH register. Multiplying a scale factor (1 / 32767) converts the value into the Real number.
+ * Quaternion = X(Y, Z, W) / 32767
 
 
 # UART Protocol 
