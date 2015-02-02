@@ -149,16 +149,30 @@ I_ACC_Y_LOW | R | 0x12 | DATA | Acceleration raw data
 I_ACC_Y_HIGH | R | 0x13 | DATA | Acceleration raw data
 I_ACC_Z_LOW | R | 0x14 | DATA | Acceleration raw data
 I_ACC_Z_HIGH | R | 0x15 | DATA | Acceleration raw data
-J4-1 | VDD | PWR | +5V power input 
-J4-2 | nRST | I | Reset input. L-reset, H-normal
-J4-3 | NC |  | Do Not Connect
-J4-4 | UART_TX | O | UART transmit
-J4-5 | UART_RX | I | UART receive
-J4-6 | NC |  | Do Not Connect
-J4-7 | NC |  | Do Not Connect
-J4-8 | NC |   | Do Not Connect    
-J4-9 | NC |   | Do Not Connect    
-J4-10| GND | PWR | Power ground. 0V
+I_GYRO_X_LOW | R | 0x16 | DATA | Gyroscope raw data
+I_GYRO_X_HIGH | R | 0x17 | DATA | Gyroscope raw data
+I_GYRO_Y_LOW | R | 0x18 | DATA | Gyroscope raw data
+I_GYRO_Y_HIGH | R | 0x19 | DATA | Gyroscope raw data
+I_GYRO_Z_LOW | R | 0x1A | DATA | Gyroscope raw data
+I_GYRO_Z_HIGH | R | 0x1B | DATA | Gyroscope raw data
+I_MAGNET_X_LOW | R | 0x1C | DATA | Magnetometer raw data
+I_MAGNET_X_HIGH | R | 0x1D | DATA | Magnetometer raw data
+I_MAGNET_Y_LOW | R | 0x1E | DATA | Magnetometer raw data
+I_MAGNET_Y_HIGH | R | 0x1F | DATA | Magnetometer raw data
+I_MAGNET_Z_LOW | R | 0x20 | DATA | Magnetometer raw data
+I_MAGNET_Z_HIGH | R | 0x21 | DATA | Magnetometer raw data
+C_ACC_X_LOW | R | 0x22 | DATA | Calibrated acceleration data
+C_ACC_X_HIGH | R | 0x23 | DATA | Calibrated acceleration data
+C_ACC_Y_LOW | R | 0x24 | DATA | Calibrated acceleration data
+C_ACC_Y_HIGH | R | 0x25 | DATA | Calibrated acceleration data
+C_ACC_Z_LOW | R | 0x26 | DATA | Calibrated acceleration data
+C_ACC_Z_HIGH | R | 0x27 | DATA | Calibrated acceleration data
+C_GYRO_X_LOW | R | 0x28 | DATA | Calibrated gyroscope data
+C_GYRO_X_HIGH | R | 0x29 | DATA | Calibrated gyroscope data
+C_GYRO_Y_LOW | R | 0x2A | DATA | Calibrated gyroscope data
+C_GYRO_Y_HIGH | R | 0x2B | DATA | Calibrated gyroscope data
+C_GYRO_Z_LOW | R | 0x2C | DATA | Calibrated gyroscope data
+C_GYRO_Z_HIGH | R | 0x2D | DATA | Calibrated gyroscope data
 
 
 
