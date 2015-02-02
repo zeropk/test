@@ -137,6 +137,47 @@ I2C interface of the myAHRS+ supports four sequences shown below.
 
 2. I2C Register description
 
+Register Name | Attributes | Address | Dafault value | Description
+------|------|------|------------- | ----------
+J3-1 | INT | O | DATA READY interrupt output
+J3-2 | SLEEP | I | Sleep mode selection input: L-sleep mode, H-normal mode. (Normal mode If not connected)
+J3-3 | I2C_SCL | I | I2C clock input 
+J3-4 | I2C_SDA |  I/O  | I2C data input and output 
+J3-5 | USB_DM | I/O | USB D-
+J3-6 | USB_DP | I/O | USB D+
+J3-7 | NC |   | Do Not Connect
+J3-8 | NC |   | Do Not Connect
+J3-9 | NC |   | Do Not Connect
+J3-10 | NC |   | Do Not Connect
+J4-1 | VDD | PWR | +5V power input 
+J4-2 | nRST | I | Reset input. L-reset, H-normal
+J4-3 | NC |  | Do Not Connect
+J4-4 | UART_TX | O | UART transmit
+J4-5 | UART_RX | I | UART receive
+J4-6 | NC |  | Do Not Connect
+J4-7 | NC |  | Do Not Connect
+J4-8 | NC |   | Do Not Connect    
+J4-9 | NC |   | Do Not Connect    
+J4-10| GND | PWR | Power ground. 0V
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # UART Protocol 
 
 # Examples
