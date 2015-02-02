@@ -125,7 +125,7 @@ The myAHRS+ operates as I2C slave and the I2C bus requires the pull-up register.
 
 ![ScreenShot](images/wiki_image_5_I2C_circuit.JPG)
 
-The I2C port operates in 3.3V voltage level and can be used directly with a MCU with 5V IO without an extra circuit.<br />
+The I2C port operates in 3.3V voltage level and can be used directly with a MCU with 5V IO without an extra circuit.<br/>
 I2C Slave address: 7bit, 0x20
 Data bit: 8bit
 I2C clock speed: Normal mode(100KHz), Fast mode(400KHz)
