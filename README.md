@@ -139,16 +139,16 @@ I2C interface of the myAHRS+ supports four sequences shown below.
 
 Register Name | Attributes | Address | Dafault value | Description
 ------|------|------|------------- | ----------
-J3-1 | INT | O | DATA READY interrupt output
-J3-2 | SLEEP | I | Sleep mode selection input: L-sleep mode, H-normal mode. (Normal mode If not connected)
-J3-3 | I2C_SCL | I | I2C clock input 
-J3-4 | I2C_SDA |  I/O  | I2C data input and output 
-J3-5 | USB_DM | I/O | USB D-
-J3-6 | USB_DP | I/O | USB D+
-J3-7 | NC |   | Do Not Connect
-J3-8 | NC |   | Do Not Connect
-J3-9 | NC |   | Do Not Connect
-J3-10 | NC |   | Do Not Connect
+WHO_AM_I | R | 0x01 | 0xB1 | -
+REV_ID_MAJOR | R | 0x02 | - | -
+REV_ID_MINOR | R | 0x03 | - | -
+STATUS | R |  0x04  | 0x80 | - 
+I_ACC_X_LOW | R | 0x10 | DATA | Acceleration raw data
+I_ACC_X_HIGH | R | 0x11 | DATA | Acceleration raw data
+I_ACC_Y_LOW | R | 0x12 | DATA | Acceleration raw data
+I_ACC_Y_HIGH | R | 0x13 | DATA | Acceleration raw data
+I_ACC_Z_LOW | R | 0x14 | DATA | Acceleration raw data
+I_ACC_Z_HIGH | R | 0x15 | DATA | Acceleration raw data
 J4-1 | VDD | PWR | +5V power input 
 J4-2 | nRST | I | Reset input. L-reset, H-normal
 J4-3 | NC |  | Do Not Connect
