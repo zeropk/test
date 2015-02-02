@@ -137,7 +137,7 @@ I2C interface of the myAHRS+ supports four sequences shown below.
 
 ###2. I2C Register description
 
-Register Name | Attributes | Address | Dafault value | Description
+Register Name | Attributes | Address | Default value | Description
 ------|------|------|---------- | ----------------
 WHO_AM_I | R | 0x01 | 0xB1 | Sensor status
 REV_ID_MAJOR | R | 0x02 | - | -
