@@ -14,7 +14,7 @@ The GUI(myAHRS+ Monitor) is available, which allows users configure all myAHRS+ 
   * Triple axis 16-bit accelerometer : ± 16 g
   * Triple axis 13-bit magnetometer  : ± 1200 μT
 * On board software
-  * Exteneded Kalman filter
+  * Extended Kalman filter
   * max 100 Hz output rate
     * Attitude : Euler angle, Quaternion
     * sensor : acceleration, rotation rate, magnetic field
